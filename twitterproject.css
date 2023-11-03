@@ -1,0 +1,176 @@
+body{
+margin-top: 0;
+height: 3000px;
+margin-left: 0;
+margin-right: 0;
+}
+.layout {
+  display: grid;
+  grid-template-columns: 300px auto 350px;
+  margin:0 auto;
+}
+.sidebar {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  
+  
+}
+
+.twitterlogo {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  width: 37px;
+  height: 37px;
+
+}
+.homepic,
+.hashtagpic,
+.bellpic,
+.envelopepic,
+.bookmarkpic,
+.listpic,
+.profilepic,
+.threedotspic
+{
+  width: 25px;
+  height: 25px;
+  
+}
+.sidebarwholelink {
+  position: absolute;
+  top: 80px;
+  left: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.sidebar-link1
+{ display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+.tweetbutton {
+  font-size:18px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 8px;
+  left: 30px;
+  background-color: rgb(29, 161, 242);
+  color: rgb(255, 255, 255);
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 30px;
+  width: 220px;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mainside-container{
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 3000px;
+  border-left: 2px black solid;
+  border-right: 2px black solid;
+}
+.magic-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 60px;
+  align-items: center;
+  background-color: lightpink;
+  position: sticky;
+  top: 0;
+  border-bottom: 2px black solid;
+}
+.rightside-container{
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+.searchbar {
+  height: 51px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: sticky;
+  top: 0;
+  padding-top: 8px;
+  background-color: lightgreen;
+}
+
+.placeholder {
+ color: rgb(133, 166, 187);
+ padding-bottom: 8px;
+ padding-left: 60px;
+ padding-top: 8px;
+ padding-right: 15px;
+ border-radius: 40px;
+ border: none;
+ width: 230px;
+ position: relative;
+ margin-top: 4px;
+ height: 25px;
+ font-size: 15px;
+ 
+}
+.placeholder:active {
+  border: none;
+  
+}
+.search-icon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 40px;
+  top: 20px;
+  
+}
