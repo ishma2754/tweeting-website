@@ -4,10 +4,18 @@ height: 3000px;
 margin-left: 0;
 margin-right: 0;
 }
+div {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: arial;
+}
 .layout {
   display: grid;
   grid-template-columns: 300px auto 350px;
   margin:0 auto;
+}
+.leftside-container{
+  height: 3000px;
 }
 .sidebar {
   width: 300px;
@@ -15,21 +23,21 @@ margin-right: 0;
   top: 0;
   bottom: 0;
   left: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  align-items: center;
-  
-  
 }
+
 
 .twitterlogo {
   position: absolute;
   top: 10px;
-  left: 40px;
+  left: 50px;
   width: 37px;
   height: 37px;
-
+}
+.twitterlogo:hover {
+  background-color: lightblue;
+  border-radius: 20px;
+  
+  
 }
 .homepic,
 .hashtagpic,
@@ -50,29 +58,42 @@ margin-right: 0;
   left: 45px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 7px;
 }
 .sidebar-link1
 { display: flex;
   flex-direction: row;
   gap: 20px;
   align-items: center;
+  width: 200px;
+  height: 30px;
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.sidebar-link1:hover {
+  background-color: lightblue;
+  cursor: pointer;
 }
 .tweetbutton {
   font-size:18px;
   font-weight: bold;
-  position: absolute;
-  bottom: 8px;
-  left: 30px;
+ 
   background-color: rgb(29, 161, 242);
   color: rgb(255, 255, 255);
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 30px;
-  width: 220px;
+  width: 210px;
   border: none;
+}
+.tweetbutton:hover {
+  opacity: 0.3;
+  transition: 0.80s;
+  cursor: pointer;
 }
 
 
@@ -131,10 +152,6 @@ margin-right: 0;
 }
 .rightside-container{
   background-color: lightblue;
-  display: flex;
-  flex-direction: column;
-  
-
 }
 
 .searchbar {
@@ -145,6 +162,7 @@ margin-right: 0;
   top: 0;
   padding-top: 8px;
   background-color: lightgreen;
+  z-index: 100;
 }
 
 .placeholder {
@@ -157,13 +175,14 @@ margin-right: 0;
  border: none;
  width: 230px;
  position: relative;
- margin-top: 4px;
+ margin-top: 2px;
  height: 25px;
  font-size: 15px;
+ margin-bottom: 20px;
  
 }
-.placeholder:active {
-  border: none;
+.placeholder:focus {
+  outline: none;
   
 }
 .search-icon {
@@ -173,4 +192,146 @@ margin-right: 0;
   left: 40px;
   top: 20px;
   
+}
+.trends-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+  border-bottom: 2px black solid;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 25px;
+  font-size: 20px;
+}
+.trends-whole-container {
+  background-color: lightskyblue;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding-top: 15px;
+  margin-left: 29px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: -44%;
+}
+
+.trendtext {
+  font-size: 20px;
+}
+.settings-icon{
+  width: 20px;
+  height: 20px;
+}
+.Canada {
+  font-size: 13px;
+  color: rgb(133, 166, 187);
+}
+.mid-line {
+  font-size: 16px;
+}
+.numbers-tweets {
+  color: rgb(133, 166, 187);
+  font-size: 16px;
+}
+span{
+  color: rgb(29, 161, 242);
+}
+.first-column {
+  border-bottom: 2px black solid;
+  padding-bottom: 10px;
+  line-height: 23px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.first-column:hover{
+  background-color: lightgreen;
+  cursor: pointer;
+  transition: 0.15s;
+  
+}
+.second-column{
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-top: 10px;
+  
+}
+.who-to-follow-container{
+  display: flex;
+  flex-direction: column;
+  background-color: lightskyblue;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  margin-left: 29px;
+  margin-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px ;
+  margin-top: 15px;
+}
+.who-to-follow-column{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  border-bottom: 2px black solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.who-to-follow-pic{
+  width: 40px;
+  height: 40px;
+  border-radius: 60px;
+}
+.flexcontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 8px;
+}
+.who-to-follow-column:hover {
+  background-color: lightgreen;
+  cursor: pointer;
+}
+
+.flexcontent2{
+  display: flex;
+  flex-direction: row; 
+  gap: 8px;
+}
+.flexcontent3{
+  display: flex;
+  flex-direction: row;
+  gap: 23px;
+}
+.follow-button {
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: rgb(29, 161, 242);
+  font-size: 15px;
+  font-weight: bold;
+  border-color: rgb(29, 161, 242);
+  border-width: 1px;
+  border-style: solid;
+  background-color: rgba(0, 0, 0, 0);
+}
+.follow-button:hover{
+  background-color: blue;
+  transition: 0.15s;
+}
+.check-mark-icon {
+  height: 20px;
+  width: 20px;
+ 
+}
+.show-text{
+  font-size: 16px;
+  color: rgb(29, 161, 242);
+  padding-top: 15px;
+  padding-left: 10px;
 }
