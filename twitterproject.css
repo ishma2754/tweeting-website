@@ -266,7 +266,7 @@ div {
   display: flex;
   flex-direction: column;
   position: sticky;
-  top: -44%;
+  top: -260px;
 }
 
 .trendstext {
