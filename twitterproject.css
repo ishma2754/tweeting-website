@@ -4,7 +4,14 @@ margin-top: 0;
 min-height: 100%;
 margin-left: 0;
 margin-right: 0;
-
+}
+@media only screen  {
+  body{
+margin-top: 0;
+min-height: 100%;
+margin-left: 0;
+margin-right: 0;
+  }
 }
 div {
   font-size: 18px;
@@ -125,12 +132,11 @@ div {
 
 
 .mainside-container{
-  background-color: lightgrey;
   display: flex;
   flex-direction: column;
   height: 100%;
-  border-left: 2px black solid;
-  border-right: 2px black solid;
+  border-left: 1px wheat solid;
+  border-right: 1px wheat solid;
 }
 .magic-icon {
   height: 20px;
@@ -145,11 +151,12 @@ div {
   padding-right: 25px;
   height: 60px;
   align-items: center;
-  background-color: lightpink;
   position: sticky;
   top: 0;
-  border-bottom: 2px black solid;
+  border-bottom: 1px wheat solid;
   font-weight: bold;
+  background-color: white;
+  
 }
 .image-icon1{
   color: blue;
@@ -165,7 +172,6 @@ div {
 }
 .profile-placeholder {
   border: none;
-  background-color: lightgray;
   color: black;
   font-size: 20px;
 }
@@ -185,6 +191,9 @@ div {
  background-color: rgb(29, 161, 242);
  border: none;
  margin-left: 10px;
+}
+.profile-column-button2:hover{
+ background-color: rgb(73, 73, 185);
 }
 .profile-column-button1 {
   font-size: 25px;
@@ -210,7 +219,7 @@ div {
 .profile-area {
   display: flex;
   height: 120px;
-  border-bottom: 2px black solid;
+  border-bottom: 1px wheat solid;
   width: 100%;
   gap: 10px;
 }
@@ -229,7 +238,7 @@ div {
 .wrapper{
   height: 4px;
   margin-top: 0px;
-  background-color: black;
+  background-color: wheat;
 }
 .maincontainer-profile2 {
   height: 20px;
@@ -243,7 +252,7 @@ div {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  border-bottom: 2px black solid;
+  border-bottom: 1px wheat solid;
   padding-bottom: 15px;
 }
 .main-container-story:hover{
@@ -309,7 +318,7 @@ div {
 
 
 .rightside-container{
-  background-color: lightblue;
+  background-color: white;
 }
 
 .searchbar {
@@ -319,12 +328,13 @@ div {
   position: sticky;
   top: 0;
   padding-top: 8px;
-  background-color: lightgreen;
+  background-color: white;
   z-index: 100;
 }
 
 .placeholder {
  color: rgb(133, 166, 187);
+ background-color: lightgray;
  padding-bottom: 8px;
  padding-left: 60px;
  padding-top: 8px;
@@ -341,7 +351,6 @@ div {
 }
 .placeholder:focus {
   outline: none;
-  
 }
 .search-icon {
   width: 25px;
@@ -356,14 +365,14 @@ div {
   flex-direction: row;
   justify-content: space-between;
   align-items: center; 
-  border-bottom: 2px black solid;
+  border-bottom: 1px wheat solid;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 25px;
   font-size: 20px;
 }
 .trends-whole-container {
-  background-color: lightskyblue;
+  background-color: lightgrey;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -402,7 +411,7 @@ span{
   color: rgb(29, 161, 242);
 }
 .first-column {
-  border-bottom: 2px black solid;
+  border-bottom: 1px wheat solid;
   padding-bottom: 10px;
   line-height: 23px;
   padding-left: 20px;
@@ -424,7 +433,7 @@ span{
 .who-to-follow-container{
   display: flex;
   flex-direction: column;
-  background-color: lightskyblue;
+  background-color: lightgrey;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -441,7 +450,7 @@ span{
   display: flex;
   flex-direction: row;
   gap: 8px;
-  border-bottom: 2px black solid;
+  border-bottom: 1px wheat solid;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
