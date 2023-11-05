@@ -5,9 +5,8 @@ margin-left: 0;
 margin-right: 0;
 }
 div {
-  font-weight: bold;
   font-size: 18px;
-  font-family: arial;
+  font-family: Roboto, arial;
 }
 .layout {
   display: grid;
@@ -59,6 +58,7 @@ div {
   display: flex;
   flex-direction: column;
   gap: 7px;
+  font-weight: bold;
 }
 .sidebar-link1
 { display: flex;
@@ -149,7 +149,57 @@ div {
   position: sticky;
   top: 0;
   border-bottom: 2px black solid;
+  font-weight: bold;
 }
+.image-icon{
+  color: blue;
+}
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 60px;
+  object-fit: cover;
+  margin-left: 10px;
+}
+.profile-area {
+  display: flex;
+  height: 100px;
+  border-bottom: 2px black solid;
+  width: 100%;
+}
+.profile-happening {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  
+}
+.whats-happening-text {
+  padding-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .rightside-container{
   background-color: lightblue;
 }
@@ -219,8 +269,9 @@ div {
   top: -44%;
 }
 
-.trendtext {
+.trendstext {
   font-size: 20px;
+  font-weight: bold;
 }
 .settings-icon{
   width: 20px;
@@ -229,9 +280,11 @@ div {
 .Canada {
   font-size: 13px;
   color: rgb(133, 166, 187);
+
 }
 .mid-line {
   font-size: 16px;
+  font-weight: bold;
 }
 .numbers-tweets {
   color: rgb(133, 166, 187);
@@ -273,6 +326,8 @@ span{
   padding-top: 15px;
   padding-bottom: 15px ;
   margin-top: 15px;
+  position: sticky;
+  top: 300px
 }
 .who-to-follow-column{
   display: flex;
@@ -297,6 +352,10 @@ span{
 .who-to-follow-column:hover {
   background-color: lightgreen;
   cursor: pointer;
+}
+.trends-container{
+ font-size: 20px;
+ font-weight: bold;
 }
 
 .flexcontent2{
@@ -334,4 +393,26 @@ span{
   color: rgb(29, 161, 242);
   padding-top: 15px;
   padding-left: 10px;
+}
+.footer {
+ display: flex; 
+ flex-direction: row;
+ justify-content: space-between;
+ margin-left: 32px;
+ margin-right: 40px;
+ margin-top: 20px;
+ position: sticky;
+ top: 550px;
+ 
+}
+
+.terms{
+  text-decoration:none ;
+  font-size: 12px;
+  font-style: lighter;
+  color:rgb(133, 166, 187) ;
+}
+.terms:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
