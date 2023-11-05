@@ -1,8 +1,10 @@
+
 body{
 margin-top: 0;
-height: 3000px;
+min-height: 100%;
 margin-left: 0;
 margin-right: 0;
+
 }
 div {
   font-size: 18px;
@@ -14,7 +16,7 @@ div {
   margin:0 auto;
 }
 .leftside-container{
-  height: 3000px;
+  height: 100%;
 }
 .sidebar {
   width: 300px;
@@ -79,7 +81,6 @@ div {
 .tweetbutton {
   font-size:18px;
   font-weight: bold;
- 
   background-color: rgb(29, 161, 242);
   color: rgb(255, 255, 255);
   padding-left: 30px;
@@ -127,8 +128,7 @@ div {
   background-color: lightgrey;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  height: 3000px;
+  height: 100%;
   border-left: 2px black solid;
   border-right: 2px black solid;
 }
@@ -151,8 +151,53 @@ div {
   border-bottom: 2px black solid;
   font-weight: bold;
 }
+.image-icon1{
+  color: blue;
+  margin-left: 15px;
+}
 .image-icon{
   color: blue;
+}
+.image-icon:hover,
+.image-icon1:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+.profile-placeholder {
+  border: none;
+  background-color: lightgray;
+  color: black;
+  font-size: 20px;
+}
+.whats-happening-text {
+  margin-top: 19px;
+}
+.profile-placeholder:focus {
+  outline: none; 
+}
+.profile-column-button2{
+ height: 40px;
+ width: 80px;
+ color: rgb(255, 255, 255);
+ border-radius: 25px;
+ font-size: 16px;
+ font-weight: 700;
+ background-color: rgb(29, 161, 242);
+ border: none;
+ margin-left: 10px;
+}
+.profile-column-button1 {
+  font-size: 25px;
+  height: 30px;
+  width: 30px;
+  border-radius: 60px;
+  font-weight: bold;
+  color: rgb(29, 161, 242);
+  background-color:rgb(255, 255, 255) ;
+  border-color: rgb(29, 161, 242);
+  border-width: 1px;
+  border-style: solid;
+  margin-left: 280px;
 }
 .profile-image {
   width: 50px;
@@ -160,28 +205,91 @@ div {
   border-radius: 60px;
   object-fit: cover;
   margin-left: 10px;
+  margin-top: 10px;
 }
 .profile-area {
   display: flex;
-  height: 100px;
+  height: 120px;
   border-bottom: 2px black solid;
   width: 100%;
+  gap: 10px;
 }
-.profile-happening {
+
+.profile-column2 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  
+}
+.profile-column-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.wrapper{
+  height: 4px;
+  margin-top: 0px;
+  background-color: black;
+}
+.maincontainer-profile2 {
+  height: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 60px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.main-container-story{
   display: flex;
   flex-direction: row;
   gap: 10px;
-  
+  border-bottom: 2px black solid;
+  padding-bottom: 15px;
 }
-.whats-happening-text {
-  padding-top: 15px;
+.main-container-story:hover{
+ cursor: pointer;
+ background-color: lightgreen;
+ transition: 0.15s;
 }
-
-
-
-
-
-
+.storypic {
+  height: 300px;
+  width: 520px;
+  border-radius: 20px;
+}
+.story-text {
+  font-size: 16px;
+  text-align: justify;
+  margin-right: 12px;
+}
+.main-container-story-uppercolumn{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+}
+.arrow {
+  margin-top: 10px;
+  margin-left: 180px;
+  color: gray;
+}
+.main-container-emojis {
+  display: flex;
+  flex-direction: row;
+  color: gray;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.number {
+  font-size: 14px;
+  margin-left: 10px;
+}
+.emojis{
+  font-size: 14px;
+  margin-left: 40px;
+}
+.emoji1 {
+ font-size: 14px; 
+}
 
 
 
